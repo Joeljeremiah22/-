@@ -4,6 +4,14 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jerry Joel — Applied Statistics</title>
+<meta name="description" content="Jerry Joel, MSc Applied Statistics (KFUPM). Research in probability distribution theory and statistical modelling, with applications to survival and public-health data." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Jerry Joel — Applied Statistics" />
+<meta property="og:description" content="Research in probability distribution theory and statistical modelling, with applications to survival and public-health data." />
+<meta property="og:url" content="https://joeljeremiah22.github.io/-/" />
+<meta property="og:image" content="https://joeljeremiah22.github.io/-/Jerry_Picture.jpg" />
+<meta name="twitter:card" content="summary" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23204B48'/%3E%3Cpath d='M8 50 C18 50 21 14 30 14 C38 14 44 36 54 44' fill='none' stroke='%23F6F3EC' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -192,6 +200,7 @@
   .entry-title{font-size:1.12rem; font-weight:600; color:var(--ink); margin-bottom:0.15rem;}
   .entry-meta{font-size:0.85rem; color:var(--ink-soft); margin-bottom:0.55rem;}
   .entry-meta em{font-style:italic;}
+  .entry p + p{margin-top:0.8rem;}
 
   /* ---------- INTERESTS ---------- */
   .interest-row{display:flex; flex-wrap:wrap; gap:0.55rem; margin-top:2.2rem;}
@@ -223,6 +232,7 @@
   .biblio .p-title{color:var(--ink); font-weight:500;}
   .biblio .p-meta{color:var(--ink-soft); font-size:0.88rem; display:block; margin:0.2rem 0;}
   .biblio .p-meta em{font-style:italic;}
+  .biblio .p-meta strong{font-weight:600;}
   .biblio a{font-size:0.85rem;}
 
   /* ---------- DATED LIST (Teaching / Activities) ---------- */
@@ -281,6 +291,7 @@
       </div>
       <nav aria-label="Section navigation">
         <a href="#about" class="active" data-section="about">About</a>
+        <a href="#education" data-section="education">Education</a>
         <a href="#research" data-section="research">Research</a>
         <a href="#publications" data-section="publications">Publications</a>
         <a href="#teaching" data-section="teaching">Teaching</a>
@@ -303,15 +314,18 @@
           <h1>Jerry Joel</h1>
           <div class="role">MSc Applied Statistics, KFUPM</div>
           <p>
-            I work in <strong>probability distribution theory</strong>, constructing and
-            characterising new families of continuous distributions, and applying them to
-            survival and public-health data. My MSc thesis on the Sine–Fréchet family
-            by integrating the New Fréchet G class with the Sine G class; my earlier work extends the inverse Exponential,
-            Ishita, Gompertz, Lomax-Exponential, and Lindley-exponential using various generator families.
+            I work in <strong>probability distribution theory and statistical modelling</strong>:
+            building new models, deriving their properties, estimating their parameters, testing
+            them by simulation, and applying them to real data, especially survival and
+            public-health data. My MSc thesis developed the Sine–Fréchet G family by combining the
+            Sine G and New Fréchet G classes, and my earlier work extended the inverse exponential,
+            Ishita, Gompertz, Lomax–exponential and Lindley–exponential distributions. I enjoy
+            learning new methods and applying this foundation to new problems.
           </p>
 
           <div class="badges">
             <span class="badge">Distribution Theory</span>
+            <span class="badge">Statistical Modelling</span>
             <span class="badge">Survival Analysis</span>
             <span class="badge">Monte Carlo Simulation</span>
             <span class="badge">Biostatistics</span>
@@ -345,9 +359,37 @@
       </div>
     </section>
 
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2>Education</h2>
+
+      <ul class="dated-list">
+        <li class="dated-item">
+          <time>2023 – 2025</time>
+          <div>
+            <div class="role">MSc Applied Statistics</div>
+            <div class="org">King Fahd University of Petroleum and Minerals, Saudi Arabia</div>
+          </div>
+        </li>
+        <li class="dated-item">
+          <time>2021 – 2022</time>
+          <div>
+            <div class="role">Postgraduate Diploma in Education (PGDE)</div>
+            <div class="org">Federal University Kashere, Nigeria</div>
+          </div>
+        </li>
+        <li class="dated-item">
+          <time>2014 – 2019</time>
+          <div>
+            <div class="role">B.Tech Statistics, First Class Honours</div>
+            <div class="org">Modibbo Adama University of Technology, Yola, Nigeria</div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
     <!-- RESEARCH -->
     <section id="research">
-      <div class="kicker">01</div>
       <h2>Research</h2>
 
       <div class="entry">
@@ -356,7 +398,7 @@
           <div class="entry-title">Statistical Properties of the Lomax–Inverse Exponential Distribution</div>
           <div class="entry-meta">Undergraduate Project, Modibbo Adama University of Technology · Supervisor: Prof. Sauta S. Abdulkadir</div>
           <p>
-            My undergraduate research project, "Statistical Properties of the Lomax–Inverse Exponential Distribution and Its Applications to Real-Life Data", was later published. This work, together with my other publications in statistical distribution theory, provided me with a solid foundation for continued research on generalized families of distributions.
+            My undergraduate research project, "Statistical Properties of the Lomax–Inverse Exponential Distribution and Its Applications to Real-Life Data", was later published in the <em>FUDMA Journal of Sciences</em>. It took me through the full modelling workflow, from deriving a model's properties to estimating it and fitting it to real data, and my later papers built on that foundation.
           </p>
         </div>
       </div>
@@ -368,8 +410,9 @@
           <div class="entry-meta">MSc Thesis, King Fahd University of Petroleum and Minerals · Supervisor: Dr. Emmanuel Afuecheta</div>
           <p>
            The Sine–Fréchet-G family introduces a flexible generator for continuous probability distributions by combining the Sine-G family with the heavy-tailed Fréchet-G family. This integration produces a new generator capable of capturing highly skewed, asymmetric, and heavy-tailed distributional shapes. The foundational study rigorously establishes its mathematical framework and derives essential properties of the proposed family, including the PDF, CDF, moments, and quantile function.
-
-To demonstrate its practical value, the family was used to extend classical distributions, yielding specific submodels such as the Sine–Fréchet exponential, Weibull, Rayleigh, and Gompertz distributions. Using maximum likelihood estimation (MLE) and Monte Carlo simulations, the performance of these models was thoroughly evaluated using real-world benchmark datasets. The results consistently showed that the new family provides a substantially better and more accurate fit than traditional statistical distributions, offering an advanced tool for data analysis in engineering, finance, and environmental sciences.
+          </p>
+          <p>
+            To demonstrate its practical value, the family was used to extend classical distributions, yielding specific submodels such as the Sine–Fréchet exponential, Weibull, Rayleigh, and Gompertz distributions. Using maximum likelihood estimation (MLE) and Monte Carlo simulations, the performance of these models was thoroughly evaluated using real-world benchmark datasets. The results consistently showed that the new family provides a substantially better and more accurate fit than traditional statistical distributions, offering an advanced tool for data analysis in engineering, finance, and environmental sciences.
           </p>
           <p><a href="https://teamdatasciencekfupm.shinyapps.io/New_Compound_Continuous_Distribution_Explorer/" target="_blank">Open the interactive Sine Fréchet Explorer</a></p>
         </div>
@@ -386,37 +429,36 @@ To demonstrate its practical value, the family was used to extend classical dist
 
     <!-- PUBLICATIONS -->
     <section id="publications">
-      <div class="kicker">02</div>
       <h2>Publications</h2>
 
       <ol class="biblio">
         <li>
           <span class="p-title">The Sine–Fréchet G Family of Continuous Distributions: Sub-models, Properties, Simulation and Applications.</span>
-          <span class="p-meta">Jerry, J., Afuecheta, E., Okorie, I., &amp; Muhammad, H. O. <em>Journal of Statistical Theory and Applications</em>, 25, 8 (2026).</span>
+          <span class="p-meta"><strong>Jerry, J.</strong>, Afuecheta, E., Okorie, I., &amp; Muhammad, H. O. <em>Journal of Statistical Theory and Applications</em>, 25, 8 (2026).</span>
           <a href="https://doi.org/10.1007/s44199-025-00159-2" target="_blank">doi.org/10.1007/s44199-025-00159-2</a>
         </li>
         <li>
           <span class="p-title">A Cubic Transmuted Ishita Distribution: Properties, Simulation and Application to COVID-19 Data.</span>
-          <span class="p-meta">Jerry, J., Fatima, A., Peter, K. O., &amp; Terna, G. I. <em>Journal of the Royal Statistical Society Nigeria Group</em>, 2(2), 323–341 (2025).</span>
+          <span class="p-meta"><strong>Jerry, J.</strong>, Fatima, A., Peter, K. O., &amp; Terna, G. I. <em>Journal of the Royal Statistical Society Nigeria Group</em>, 2(2), 323–341 (2025).</span>
         </li>
         <li>
           <span class="p-title">A Sine Lomax-Exponential Distribution: Its Properties, Simulation and Applications to Survival Data.</span>
-          <span class="p-meta">Jerry Joel, Bassa Yakura, Elizabeth, A., Samuel, O., &amp; Ieren, T. G. <em>African Journal of Mathematics and Statistics Studies</em>, 7(4), 296 (2024).</span>
+          <span class="p-meta"><strong>Jerry, J.</strong>, Bassa Yakura, Elizabeth, A., Samuel, O., &amp; Ieren, T. G. <em>African Journal of Mathematics and Statistics Studies</em>, 7(4), 296 (2024).</span>
           <a href="https://doi.org/10.52589/AJMSS-IHSYZU29" target="_blank">doi.org/10.52589/AJMSS-IHSYZU29</a>
         </li>
         <li>
           <span class="p-title">Statistical Properties of Lomax-Inverse Exponential Distribution and Applications to Real Life Data.</span>
-          <span class="p-meta">Abdulkadir, S. S., Jerry, J., &amp; Ieren, T. G. <em>FUDMA Journal of Sciences</em>, 680–694 (2020).</span>
+          <span class="p-meta">Abdulkadir, S. S., <strong>Jerry, J.</strong>, &amp; Ieren, T. G. <em>FUDMA Journal of Sciences</em>, 680–694 (2020).</span>
           <a href="https://doi.org/10.33003/fjs-2020-0402-435" target="_blank">doi.org/10.33003/fjs-2020-0402-435</a>
         </li>
         <li>
           <span class="p-title">On a Shape Parameter of Gompertz Inverse Exponential Distribution Using Classical and Non-Classical Method of Estimation.</span>
-          <span class="p-meta">Ieren, T. G., Chama, A. F., Bamigbala, O. A., Jerry Joel, Kromtit, F. M., &amp; Eraikhuemen, I. B. <em>Journal of Scientific Research &amp; Reports</em>, 25(6), 1–10 (2019).</span>
+          <span class="p-meta">Ieren, T. G., Chama, A. F., Bamigbala, O. A., <strong>Jerry, J.</strong>, Kromtit, F. M., &amp; Eraikhuemen, I. B. <em>Journal of Scientific Research &amp; Reports</em>, 25(6), 1–10 (2019).</span>
           <a href="https://doi.org/10.9734/JSRR/2019/v25i630203" target="_blank">doi.org/10.9734/JSRR/2019/v25i630203</a>
         </li>
         <li>
           <span class="p-title">On the Properties and Applications of a Transmuted Lindley-Exponential Distribution.</span>
-          <span class="p-meta">Umar, A. A., Eraikhuemen, I. B., Koleoso, P. O., Jerry Joel, &amp; Ieren, T. G. <em>Asian Journal of Probability and Statistics</em>, 5(3), 1–13 (2019).</span>
+          <span class="p-meta">Umar, A. A., Eraikhuemen, I. B., Koleoso, P. O., <strong>Jerry, J.</strong>, &amp; Ieren, T. G. <em>Asian Journal of Probability and Statistics</em>, 5(3), 1–13 (2019).</span>
           <a href="https://doi.org/10.9734/AJPAS/2019/v5i330139" target="_blank">doi.org/10.9734/AJPAS/2019/v5i330139</a>
         </li>
       </ol>
@@ -424,7 +466,6 @@ To demonstrate its practical value, the family was used to extend classical dist
 
     <!-- TEACHING -->
     <section id="teaching">
-      <div class="kicker">03</div>
       <h2>Teaching &amp; Experience</h2>
 
       <ul class="dated-list">
@@ -468,7 +509,6 @@ To demonstrate its practical value, the family was used to extend classical dist
 
     <!-- ACTIVITIES -->
     <section id="activities">
-      <div class="kicker">04</div>
       <h2>Honours &amp; Activities</h2>
 
       <ul class="dated-list">
@@ -501,10 +541,15 @@ To demonstrate its practical value, the family was used to extend classical dist
           </div>
         </li>
         <li class="dated-item">
-          <time>Memberships</time>
+          <time>Member</time>
+          <div>
+            <div class="role">Nigeria Statistics Association (NSA)</div>
+          </div>
+        </li>
+        <li class="dated-item">
+          <time>Member</time>
           <div>
             <div class="role">Education USA (EDUSA)</div>
-            <div class="org">Nigeria Statistics Association (NSA)</div>
           </div>
         </li>
       </ul>
